@@ -12,18 +12,25 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/neoarcana/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.alexpyslar03.neoarcana.NeoArcana"
+			"com.alexpyslar03.NeoArcana"
+		],
+		"client": [
+			"com.alexpyslar03.NeoArcanaClient"
 		]
 	},
 	"mixins": [
-		"neoarcana.mixins.json"
+		"neoarcana.mixins.json",
+		{
+			"config": "neoarcana.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.2",
+		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"

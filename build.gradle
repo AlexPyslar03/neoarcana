@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"neoarcana" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

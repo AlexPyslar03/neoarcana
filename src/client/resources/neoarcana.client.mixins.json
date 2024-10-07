@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.alexpyslar03.mixin",
+	"package": "com.alexpyslar03.mixin.client",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
+	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
