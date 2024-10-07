@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.alexpyslar03.neoarcana.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"NeoArcanaMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
